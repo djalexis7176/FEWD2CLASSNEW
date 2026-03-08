@@ -1,0 +1,39 @@
+html {
+    font-size: 10px;
+}
+body {
+    font: 1.5rem Verdana, Arial, sans-serif;
+}
+.container {
+    background-color: #dedede;
+    padding: 10px;
+    display: flex;
+    margin: 10px;
+    width: 500px ;
+}
+.item {
+    border: solid 1px #333;
+    padding: 10px;
+    width: 160px;
+}
+.i1 { background-color: wheat; }
+.i2 { background-color: orange; }
+.i3 { background-color: gold; }
+.i4 { background-color: lightgreen; }
+.i5 { background-color: lightpink; }
+.i6 { background-color: powderblue; }
+.i7 { background-color: plum; }
+
+.c2 {
+    flex-wrap: wrap;
+}
+.c3 {
+    flex-wrap: wrap-reverse;
+}
+.c4 {
+    flex-wrap: nowrap;
+}   
+.c5 {
+    flex-wrap: wrap;
+    width: 400px;
+}

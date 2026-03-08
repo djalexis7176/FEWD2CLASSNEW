@@ -1,0 +1,73 @@
+body {
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #000
+}
+a:hover {
+    color: #e6a563;
+}
+nav {
+    background-color: #efefef;
+    padding: 10px;
+    margin-bottom: 2em;
+}
+nav img {
+    width: 250px;
+}
+nav ul {
+    list-style-type: none;
+}
+.button {
+    background-color: #e6a563;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.nav1 ul {
+            
+            display: flex;
+            align-items: right;
+            gap: 25px;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .nav1 ul li:first-child {
+            /*  push the  list items to the right */
+            margin-right: auto;
+        }
+
+        /* --- NAV 2: Left Aligned --- */
+        .nav2 ul {
+            
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .nav2 ul li:last-child {
+            /*  push  list item to the right */
+            margin-left: auto; 
+        }
+
+        /* --- NAV 3: Centered --- */
+        .nav3 ul {
+            
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .nav3 ul li:first-child {
+            margin-right: auto;
+        }
+        .nav3 ul li:last-child {
+            margin-left: auto;
+        }

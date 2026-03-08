@@ -1,0 +1,53 @@
+html {
+    font-size: 10px;
+}
+body {
+    font: 1.5rem Verdana, Arial, sans-serif;
+}
+.container {
+    background-color: #dedede;
+    padding: 10px;
+    display: flex;
+    margin: 10px;
+}
+.container2 {
+    background-color: #eea3a3;
+    padding: 10px;
+    display: flex;
+    margin: 10px;
+}
+.container2 ul {
+    padding: 0;
+    margin: 0;
+}
+.container2 li {
+    list-style: none;
+}
+.container2 ul :first-child {
+    background-color: powderblue;
+    margin-top: 0;
+}
+.container2     ul :last-child {
+    background-color: gold;
+    margin-bottom: 0;
+}
+
+.item {
+    border: solid 1px #333;
+    width: 60px;
+    padding: 10px;
+}
+.i1 { background-color: powderblue; }
+.i2 { background-color: orange; }
+.i3 { background-color: gold; }
+
+.c0 {
+    
+}
+.c2 {
+    flex-direction: row-reverse;
+}
+.c3 {    flex-direction: column;
+}
+.c4 {    flex-direction: column-reverse;
+}

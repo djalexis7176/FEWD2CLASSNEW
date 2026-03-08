@@ -1,0 +1,40 @@
+html {
+    font-size: 10px;
+}
+body {
+    font: 1.5rem Verdana, Arial, sans-serif;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    border: solid 1px rgb(241, 31, 31);
+}
+h1 {
+    font-size: 4rem;
+    margin-bottom: .5em;
+}
+header {
+    background-color: #b8b8b8;
+    font-size: 3rem;
+}
+article.main {
+    background-color: #e6e6e6;
+    flex: 1;
+}
+aside {
+    background-color: aqua;
+    flex: 0 0 25%;
+}
+.sidebar1 {
+    order: -1;
+}
+
+footer {
+    background-color: #b8b8b8;
+}
+main {
+    display: flex;
+    flex: 1;
+    width: 80%;
+    margin: 0 auto;
+}

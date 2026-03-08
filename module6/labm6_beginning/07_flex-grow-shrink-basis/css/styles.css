@@ -1,0 +1,43 @@
+html {
+    font-size: 10px;
+}
+body {
+    font: 1.5rem Verdana, Arial, sans-serif;
+}
+.container {
+    background-color: #dedede;
+    padding: 10px;
+    display: flex;
+    margin: 10px;
+    
+}
+.item {
+    border: solid 1px #333;
+    /*width: 150px;  */
+    padding: 10px;
+}
+.i1 { background-color: powderblue;}
+.i2 { background-color: orange;}
+.i3 { background-color: gold; }
+/*  
+    
+    .c1 .i3 {
+        flex-grow: 1;
+    }
+    .c2 .i2 {
+        flex-grow: 2;
+    }
+*/
+
+.c1 .i2 {
+    flex-shrink: 2;
+}
+.c2 {
+    width: 80%;
+    flex-direction: row;
+
+}
+.c2 .item {
+    flex: 1;
+   /* flex-basis: 100px;  */
+}

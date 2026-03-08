@@ -1,0 +1,48 @@
+html {
+    font-size: 10px;
+}
+body {
+    font: 1.5rem Verdana, Arial, sans-serif;
+}
+.container {
+    background-color: #dedede;
+    padding: 10px;
+    display: flex;
+    margin: 10px;
+    height: 300px;
+}
+.item {
+    border: solid 1px #333;
+    width: 60px;
+    padding: 10px;
+}
+.i1 { background-color: powderblue; }
+.i2 { background-color: orange; }
+.i3 { background-color: gold; }
+
+.c1 {
+    align-items: stretch;
+}
+.c2 {
+    align-items: flex-start;
+}
+.c3 {
+    align-items: center;
+}
+.c4 {
+    align-items: flex-end;
+}
+.c5 {
+    align-items: baseline;
+}
+.c5 .i2 {
+    height: 50px;
+    padding: 50px 10px 10px;
+}
+.c6 {
+    flex-direction: column;
+    align-items: flex-startflex-end;
+}
+.c7 {
+    align-items: center;
+    justify-content: center;

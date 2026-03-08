@@ -1,0 +1,53 @@
+/*this is me playing with only using justify-content to achieve the assignment */
+
+
+body {
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #000
+}
+a:hover {
+    color: #e6a563;
+}
+nav.cat {
+    background-color: #efefef;
+    padding: 10px;
+    margin-bottom: 2em;
+    display: flex
+}
+nav img {
+    width: 250px;
+}
+nav ul {
+    list-style-type: none;
+}
+
+.button {
+    background-color: #e6a563;
+    border-radius: 10px;
+    padding: 5px 10px;
+    
+}
+.cat ul {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.cat.l1 ul {
+    
+    justify-content: flex-start;
+}
+.cat.l2 ul {
+    justify-content: center;
+}
+.cat.l3 ul {
+    justify-content: flex-end;
+}
+img {
+    margin-left: 0 auto;
+}

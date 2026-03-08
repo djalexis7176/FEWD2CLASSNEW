@@ -1,0 +1,19 @@
+html {
+    font-size: 10px;
+}
+body {
+    font: 1.5rem Verdana, Arial, sans-serif;
+}
+.container {
+    background-color: #dedede;
+    padding: 10px;
+    display: flex;
+}
+.item {
+    border: solid 1px #333;
+    width: 160px;
+    padding: 10px;
+}
+.i1 { background-color: powderblue; }
+.i2 { background-color: orange; }
+.i3 { background-color: gold; }

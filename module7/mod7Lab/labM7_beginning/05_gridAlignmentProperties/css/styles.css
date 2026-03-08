@@ -1,0 +1,30 @@
+html { font-size: 10px;}
+body { font: 1.5rem Verdana, Arial, sans-serif;}
+h1 {
+    font-weight: normal;
+    font-size: 3.6rem;
+}
+.container {
+    background-color: #dedede;
+    padding: 10px;
+    height: 250px;
+    display: grid;
+    grid-template-columns: repeat(3,80px);
+}
+.item {
+    box-sizing: border-box;
+    border: 1px solid #333;
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
+    padding: 10px;
+}
+
+.i1 { background-color: #89f9dc; }
+.i2 { background-color: #59e9c4; }
+.i3 { background-color: #00b9b3; }
+.i4 { background-color: #178b9a; }
+.i5 { background-color: #446b61; }
+.i6 { background-color: #539887; }
+.i7 { background-color: #539a98; }
+.i8 { background-color: #30929f; }

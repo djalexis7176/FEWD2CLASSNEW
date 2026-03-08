@@ -1,0 +1,60 @@
+html {
+    font-size: 10px;
+}
+body {
+    font: 1.5rem Verdana, Arial, sans-serif;
+    margin: 1em;
+    color: #333;
+}
+h1 { 
+    font-size: 4rem;
+    margin-bottom: 0.5em;
+}
+h2 { 
+    font-size: 3rem;
+    margin-bottom: 0.25em;
+}
+h3 { 
+    font-size: 2.5rem;
+    margin-bottom: 0.25em;
+}
+p {
+    margin: 0 0 1rem;
+}
+.container {
+    background-color: #dedede;
+    padding: 10px;
+    display: flex;
+    margin: 10px;
+    height: 200px;
+}
+.item {
+    border: solid 1px #333;
+    width: 60px;
+    padding: 10px;
+}
+.i1 { background-color: powderblue; }
+.i2 { background-color: orange; }
+.i3 { background-color: gold; }
+.i4 { background-color: plum; }
+.i5 { background-color: lightseagreen; }
+
+
+.c1 .i3 {
+    align-self: stretch;
+}
+.c2 .i3 {
+    align-self: flex-start;
+}
+.c3 .i3 {
+    align-self: flex-end;
+}       
+.c4 .i3 {
+    align-self: center;
+}
+.c5 .i3 {
+    align-self: baseline
+}
+.c5 .i1 {
+    font-size: 3rem;
+}

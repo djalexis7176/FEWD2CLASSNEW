@@ -1,0 +1,65 @@
+html {
+    font-size: 10px;
+}
+body {
+    font: 1.5rem Verdana, Arial, sans-serif;
+}
+a {
+    color: #C462DD;
+    text-decoration: none;
+}
+.button {
+    background-color: #C462DD;
+    color: #fff;
+    padding: .25em .5em .35em;
+    border-radius: .5em;
+}
+nav {
+    background-color: #dedede;
+    padding: 20px;
+    margin-bottom: 2em;
+}
+.nav1 ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+nav2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav2 ul {
+    display: flex;
+    justify-content: center;
+    
+}
+.nav2 li {
+    margin: 0 1em;
+}
+.nav3 ul {
+    display: flex;
+    justify-content: center;
+    gap: 1em    ;
+}
+.nav3 li:first-child {
+    order: 1;
+    margin-right: auto;
+    }
+.nav3 ul li:last-child {
+    margin-left: auto;
+}
+.nav4 ul {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.nav4 ul li:last-child {
+    display: flex;
+    align-items: center;
+    order: 3;
+    margin-left: auto;
+}   
+.nav4 li:first-child {
+    order: 1;

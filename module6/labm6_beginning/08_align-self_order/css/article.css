@@ -1,0 +1,15 @@
+article {
+    border: solid 1px #b9b9b9;
+    border-radius: 0.75em;
+    margin: 1rem 0;
+    padding: 1em;
+    width: 60%;
+}
+.date { 
+    font-size: 1.2rem;
+}
+.author {
+    font-size: 1.4rem;
+    font-style: italic;
+    color: #b9b9b9;
+}
