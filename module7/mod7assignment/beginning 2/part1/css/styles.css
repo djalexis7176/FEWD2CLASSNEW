@@ -1,0 +1,107 @@
+body {
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.g1{
+    background-color: #dedede;
+    padding: 10px;
+}
+
+.grid {
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 100px);    
+    gap: 10px; 
+    max-width: 400px;
+}
+
+.cell {
+    background-color: #dde0e1;
+    color: rgb(8, 8, 8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*Exercise 2: Variable Grid Layout with Numbers
+
+Create a 4x4 grid where the columns and rows have varying sizes. Use the repeat() function with minmax() to define the grid structure, making it more dynamic and visually interesting.
+
+Requirements:
+The grid should have 4 columns and 4 rows, for a total of 16 cells.
+Each cell should contain a number from 1 to 16.
+The cells should have a consistent width (e.g., 100px).
+Rows should alternate between a fixed height of 50px and a height that adjusts dynamically using minmax(75px, 1fr).
+The gap between cells should be 15px.
+The content of each cell (numbers) should be centered both horizontally and vertically.
+*/
+
+.grid2 .cell {
+    background-color: #ff7a7a;
+    color: white; 
+}
+.grid2 {
+    display: grid; 
+    grid-template-columns: repeat(4, 100px);
+    
+    /* Rows: Alternating fixed 50px and dynamic minmax. */
+    grid-template-rows: 50px minmax(75px, 1fr) 50px minmax(75px, 1fr);
+    gap: 15px; 
+    margin-top: 20px;
+}
+
+.g3 {
+    display: grid;
+    height: 400px; 
+    max-width: 500px;
+    /*using this to draw the layout using the syntax of each set of words is a row and each word in a row is a column. repeat the words header and footer to span the row over 2 columns*/
+    grid-template-areas: 
+        "header header"
+        "sidebar main"
+        "footer footer";
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+}
+
+
+header { 
+    grid-area: header; 
+    background-color: #add8e6; /* Light Blue */
+    color: black; 
+    padding: 5px 10px;
+}
+
+aside { 
+    grid-area: sidebar; 
+    background-color: #ffb6c1; /* Light Pink */
+    color: black; 
+    padding: 5px 10px;
+}
+
+main { 
+    grid-area: main; 
+    display: grid; 
+    grid-template-rows: 2fr 1fr; /* Articles is larger than Featured in screenshot */
+    gap: 10px;
+}
+
+footer { 
+    grid-area: footer; 
+    background-color: #cccccc; /* Grey */
+    color: black; 
+    padding: 5px 10px;
+}
+
+.articles { 
+    background-color: #00a896; /* Teal/Seafoam Green */
+    color: black; 
+    padding: 5px 10px;
+}
+
+.featured { 
+    background-color: #ffffdf; /* Pale Yellow */
+    color: black; 
+    padding: 5px 10px;
+}
+

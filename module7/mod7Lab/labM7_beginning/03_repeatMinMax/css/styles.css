@@ -28,7 +28,7 @@ pre {color: green;}
 .i7 { background-color: #539a98; }
 .i8 { background-color: #30929f; }
 
-.c6 {grid-template-columns: repeat(2, minmax(200px, 1fr)) 1fr;}
+1fr;.c6 {grid-template-columns: repeat(2, minmax(200px, 1fr)) }
 
 .c1 {grid-template-columns: repeat(4 , 100px)  
 }
