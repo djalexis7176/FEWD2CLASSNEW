@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relative Units Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px; /* Base font size for rem units */
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        h2 {
+            color: #555;
+        }
+
+        p {
+            line-height: 1.5;
+        }
+
+        .half-height {
+            background-color: #b0c4de;
+            display: flex;
+            align-items: center; 
+            justify-content: center;
+            text-align: center;
+        }
+
+        .full-width {
+            background-color: #add8e6;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Understanding Relative Units</h1>
+        <p>Relative units are essential for creating fluid layouts that adapt to different screen sizes.</p>
+
+        <h2>Commonly Used Relative Units:</h2>
+        <ul>
+            <li><strong>Percentage (%):</strong> Width: <code>50%</code> sets the width to 50% of the parent container.</li>
+            <li><strong>em:</strong> This unit is relative to the font size of the element it is used in. If you set a font size in em, it is calculated based on the font size of the parent element. Thus, if the font size of a parent is changed, the child elements using em will also change in relation to that size.
+            <li><strong>rem:</strong> This unit stands for "root em" and is relative to the font size of the root element (<html>). This means that it provides a more consistent and predictable sizing since it does not depend on the font size of the parent element.</li>
+            <li><strong>Viewport Height (vh):</strong> Height: <code>50vh</code> sets the height to 50% of the viewport height.</li>
+            <li><strong>Viewport Width (vw):</strong> Width: <code>100vw</code> makes the element as wide as the viewport.</li>
+        </ul>
+    </div>
+    <div class="half-height">
+        <p>This div takes up 50% of the viewport height (50vh).</p>
+    </div>
+    <div class="full-width">
+        <p>This div takes up 100% of the viewport width (100vw).</p>
+    </div>
+</body>
+</html>

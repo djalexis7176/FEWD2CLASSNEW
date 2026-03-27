@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fluid Layout Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px; /* Limit maximum width for larger screens */
+            margin: 0 auto; /* Center the container */
+            padding: 20px;
+            box-sizing: border-box; /* Include padding in total width */
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+        }
+
+        .column {
+            flex: 1; /* Allow columns to grow equally */
+            min-width: 300px; /* Minimum width to maintain usability */
+            padding: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ddd; /* Border for visibility */
+            margin: 10px; /* Spacing between columns */
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #4CAF50;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Fluid Layout Example</h1>
+        </header>
+        <div class="content">
+            <div class="column">
+                <h2>Column 1</h2>
+                <p>This is some content in the first column. Resize the browser window to see how the layout adapts.</p>
+            </div>
+            <div class="column">
+                <h2>Column 2</h2>
+                <p>This is some content in the second column. The columns will stack on top of each other on smaller screens.</p>
+            </div>
+        </div>
+        <footer>
+            <p>Footer Content</p>
+        </footer>
+    </div>
+</body>
+</html>

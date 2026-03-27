@@ -1,0 +1,186 @@
+
+
+* {
+    box-sizing: border-box;
+
+html { font-size: 10px; }
+body {
+    font: 1.5rem Verdana, Arial, sans-serif;
+    color: #333;
+}
+h1 { font-size: 4rem; margin-bottom: .5em; }
+h2 { font-size: 3rem; margin: 1em 0 .25em; }
+h2 { font-size: 2.5rem; margin: 1em 0 .25em; }
+p { margin: 0 0 1em; }
+hr { margin: 2em 0 1em; }
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+}
+header {
+    background-color: #efefef;
+
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* align-items: center;*/
+}
+
+header a {
+    text-decoration: none;
+    color: #000;
+
+
+}
+
+header a:hover {
+    color: #a703a7;
+
+}
+
+nav ul {
+    display: flex;
+    list-style:none;
+    align-items: center;
+    gap: 2em;
+
+
+}
+
+nav li {
+    position: relative;
+}
+
+nav .btn {
+    background-color: #a703a7;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: 1px solid #a703a7
+
+
+}
+
+nav.btn:hover {
+    background-color: transparent;
+
+}
+
+.sub-menu {
+    /*display:flex; */
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #efefef ;
+    padding: 10px 20px 20px 20px;
+    border-radius: 20px;
+    width: 90px;
+    margin-top: 10px;
+    display: none;
+
+}
+
+nav li:hover > .sub-menu {
+    display:flex;
+
+}
+
+.navToggler, .navTogglerMenu {
+    display:none;
+}
+
+/**if we add styles to the submenu**/
+
+
+/*
+.sub-menu {
+    gap: 0;
+    overflow: hidden;
+    padding: 0;
+}
+
+.sub-menu li {
+    width: 100%;
+}
+
+.sub-menu li a {
+    width: 100%;
+    display: inline-block;
+    text-align: center;;
+}
+
+.sub-menu li:hover a {
+    background-color: #a703a7;
+    color: #fff;
+}
+*/
+
+@media (max-width:767px) {
+    
+    header nav {
+        position: absolute;
+        width: 100%;
+        top:60px;
+        left: 0;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        background-color: #efefef;
+        padding:0;
+        gap:0;
+        margin:0;
+        border-top: 1px solid #fff;
+    }
+
+    header nav li {
+        text-align: right;
+        border-bottom: 1px solid #fff;
+        width: 100%;
+        /*padding: 20px;*/
+    }
+
+    nav li a {
+        display: block;
+        padding: 20px;
+        width: 100%;
+    }
+
+    nav .btn {
+        width: 100%;
+        border-radius: 0;
+        display: block;
+        padding: 20px;
+    }
+
+    header nav li:last-child {
+        padding:0;
+    }
+
+    .sub-menu {
+        display: flex;
+        position: relative;
+        border-radius: 0;
+        width: 100%;
+        padding: 0;
+    }
+    .navTogglerMenu {
+        display:block;
+        
+    }
+    .navTogglerMenu img {
+        width: 25px;
+    }
+    .menuClose, nav, .navToggler:checked ~ .navTogglerMenu .menuOpen {
+        display:none;
+    }
+    .navToggler:checked ~ nav, .navToggler:checked ~ .navTogglerMenu .menuClose {
+        display: block;
+    }
+}
+}
