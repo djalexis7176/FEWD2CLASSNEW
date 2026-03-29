@@ -1,0 +1,131 @@
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 3fr; 
+    gap: 40px;
+    align-items: start;
+    margin-top: 20px;
+}
+
+.contact-info address {
+    font-style: normal;
+    line-height: 1.8;
+}
+
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+.full-width {
+    grid-column: span 2;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+fieldset .form-group label {
+    font-weight: 600;
+
+}
+
+label, legend {
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+label span {
+    color: red;
+}
+
+.inline-field label {
+    font-weight: 600;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+input[type="text"], input[type="tel"], input[type="email"], textarea, select  {
+    width: 100%;
+    height: 38px;
+    padding: 6px 10px;
+    box-sizing: border-box;
+    border: 1px solid #d1d1d1;
+    border-radius: 4px;
+    font-size:14px;
+
+}
+select[multiple], textarea {
+    height: 100px;
+}
+input[type="submit"] {
+    background-color: transparent;
+    border:1px solid #bbb;
+    padding: 10px 30px;
+    text-transform: 0.1rem;
+    font-size: 11px;
+    font-weight: 600;
+    border-radius: 4px;
+    align-self:flex-start;
+}
+/* 1. Base style: Red border for all required fields (Invalid by default) */
+input[required] {
+    border: 2px solid red;
+}
+
+/* 2. Hover style while INVALID: Red tint */
+input[required]:invalid:hover {
+    background-color: rgba(255, 0, 0, 0.2);
+}
+
+/* 3. Valid style: Green border once filled correctly */
+input[required]:valid {
+    border-color: green;
+}
+
+/* 4. Hover style while VALID: Green tint AND Green border */
+input[required]:valid:hover {
+    background-color: rgba(23, 207, 72, 0.2);
+    border-color: green;
+}
+
+
+@media (max-width: 767px) {
+    
+    .container {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    .contact-layout {
+        grid-template-columns: 1fr; 
+        gap: 20px; 
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column; 
+        gap: 15px;
+    }
+
+ 
+    input[type="submit"] {
+        width: 100%;
+        align-self: stretch;
+    }
+}

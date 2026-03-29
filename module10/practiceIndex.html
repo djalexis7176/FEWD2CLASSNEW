@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Form Practice</title>
+
+    <form action="contactus.php" method="post" name="contactus"> </form>
+
+     <!--  <fieldset> and <legend> -->
+        <fieldset><br>
+            <button type="submit">SUBMIT</button>
+
+
+        </fieldset>
+
+    <fieldset>
+        <legend> Contact Our sales Representative<legend>
+           <!-- <label>Enter your user name</label>-->
+            <input type="text" autofocus value="name" size="30"  maxlength="5" placeholder="Enter your user name">
+
+            <input type="password" size="30" placeholder="Enter Your Password" username><br>
+
+            <input type="checkbox". name="terms" value="I agree" checked>I agree with the terms of services
+
+            <p> Which solution aare you interested in?</p>
+            
+            <input type="checkbox" name="product" value="product 1"> Product 1 <br> 
+            <input type="checkbox" name="product" value="product 2"> Product 2 <br> 
+            <input type="checkbox" name="product" value="product 3"> Product 3 <br> 
+
+            <p>which solution are you interested in?</p>
+
+            <input type="radio" name="product2" value="product 1"> Product 1 <br> 
+             <input type="radio" name="product2" value="product 1"> Product 2 <br>
+              <input type="radio" name="product2" value="product 1"> Product 3 <br>
+
+
+<input type="file" name="upload" accept="image/jpeg, image/gif"><br><br>
+<input type="hidden" value="1234" name="customer id"><br><br>
+
+<input type="image" src="#" alt="submit now"><br>
+
+<!--  select , option, and optgroup. tags-->
+
+<p> What is your favorite food?</p>
+
+<label for="favFood">What is your Favourite Food?</label>
+<br>
+<select name="favFood" multiple>
+    <option selected disabled> Choose Your Favorite Food</option>
+    <optgroup label="italian">
+            <option  value="pasta">pasta</option>
+            <option  value="pizza">pizza</option>
+    </optgroup>
+
+     <optgroup label="mexican">
+            <option  value="burrito">burrito</option>
+            <option  value="tacos">tacos</option>
+     </optgroup>
+
+</option>   
+</select>
+<br><br>
+<textarea>
+
+</textarea rows="7" cols="5" placeholder="comments or questions" id="comments"><br><br>
+
+
+<p> what is your favourite operating system?</p>
+<input type="radio" name="OS" value="Mac" Id="Mac">
+<label for="Mac"> "Mac" </label>
+
+<input type="radio" name="OS" value="Windows" Id="Windows">
+<label for="Mac"> "Windows" </label>
+
+<input type="radio" name="OS" value="Linux" Id="Linux">
+<label for="Mac"> "Linux" </label>
+
+
+
+
+
+              <input type="submit" name="sendnow" value="Contact Us"><br>
+
+              <input type="reset" nae="reset" value="reset the form"><br><br>
+
+              <input type="button" name="button" value="Click Me"><br><br>
+
+              <!--GENERIC BUTTON: 
+
+              <input type="button" name="genericbutton" value="Click Me" onClick="window.alert('You just clicked the button');">
+
+              for interacting with javasrcipt 
+        -->
+
+        <button type="submit">image can be here for the button</button>
+
+        
+    </fieldset>
+    <legend> HTML 5 Elements</legend>
+
+    <input type="search" name="search" placeholder="search"><br>
+
+    <input type="tel" name="phone" placeholder="555-555-5555" required title="Please enter in the format: 555-555-5555" pattern="\d{3}[\-]\d{3}[\-]\d{4}>"><br>
+
+    <button type="submit">SUBMIT</button>
+    <br>
+
+    <input type="url" name="url" placeholder="Enter your url website"><br>
+
+    <input type="email" name="email" placeholder="Enter your email"><br>
+
+    Age:<input type="number" name="age" min="5"><br>
+
+    Salary:<input type="range" name="salary"  min="12000" max="24000"  step="1000"  ><br>
+
+    Pick your favourite colour: <input type="color" name="colour"><br><br>
+
+    Pick a Date: <br>
+    <input type="datetime-local" name="datetime"><br>
+
+    <input type="date" name="date"><br>
+     <input type="month" name="month"><br>
+      <input type="week" name="week"><br>
+       <input type="time" name="time"><br>
+       <br><br>
+<p> Which Browser do you prefer to use?:</p>
+       <input type="url"   name="searchengine" list="links">  
+       
+       <datalist id="links">
+        <option value="google.com" label="google">  </option>
+        <option value="yahoo.com" label="yahoo">  </option>
+       </datalist>
+
+       <br>
+       <br>
+
+       <progress max="100" value="20" > </progress>
+
+       <details> 
+        <summary>click for more information</summary>
+        This is more information<br>
+        so much information.
+
+
+       </details> <!-- its like a toggle-->
+
+       <summary></summary>
+
+    <fieldset>
+
+This is an empty field set
+
+
+    </fieldset>
+
+</form>
+    
+
+    <!--  <input>10 attributes we will work with, there are additional 11 attributes:
+    autofocus: autofus to that field when the page loads
+    
+    form: specifies the form to which the input belongs
+
+    placeholder: provides a short hint
+
+    size: will make the box big enough to see a certain amount of characters before you cannot see them
+
+    value:  for example value="name" prefills the form with whatevr you put in. if the user does not change it then that gets submitted in the form whereas placeholder does not get submitted. 
+
+    radio button : only one element from a range. 
+
+    input type"checkbox". : check or unchecked. element comes first and associated text comes next
+
+    submit: submits info from form in and by default has value of "submit". if you do not give it a value 
+    -->
+
+
+</head>
+<body>
+    
+</body>
+</html>

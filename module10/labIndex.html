@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lab 10 Contact Us Form</title>
+    <link rel="stylesheet" href="labStyle.css">
+
+</head>
+<body>
+    <p><em>Note: fields in red are required</em></p>
+
+    <form action="#" method="post" name="contact">
+        <!-- the form tag tells the browser that everything in this form will be data sent together-->
+
+        <div class="form-group">
+            <label for="fname">First Name:<span>*</span></label>
+            <input type="text" name="fname" id="fname" required placeholder="First Name">
+        </div>
+
+        <div class="form-group">
+            <label for="lname">Last Name:<span>*</span></label>
+            <input type="text" name="lname" id="lname" required placeholder="Last Name">
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number:<span>*</span></label>
+            <input type="tel" name="phone" id="phone" required placeholder="555-555-55555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="format: 555-555-5555">
+        </div>
+
+        <div class="form-group">
+            <label for="company">Company:<span>*</span></label>
+            <input type="text" name="company" id="company" required placeholder="Company">
+        </div>
+
+        <div class="form-group full-width">
+            <label for="email">Email:<span>*</span></label>
+            <input type="email" name="email" id="email" required placeholder="name@example.com">
+        </div>
+
+        <fieldset class="form-group">
+            <legend>Interests</legend>
+
+            <div class="inline-field">
+                <input type="checkbox" name="interest" id="interest1" value="interest1">
+                <label for="interest1">Interest 1</label>
+            </div>
+
+            <div class="inline-field">
+                <input type="checkbox" name="interest" id="interest2" value="interest2">
+                <label for="interest2">Interest 2</label>
+            </div>
+
+            <div class="inline-field">
+                <input type="checkbox" name="interest" id="interest3" value="interest3">
+                <label for="interest3">Interest 3</label>
+            </div>
+        </fieldset>
+
+        <fieldset class="form-group">
+                <legend>Preferred Product</legend>
+
+                    <div class="inline-field">
+                        <label for="product1">Product 1</label>
+                        <input type="radio" name="product" id="product1" value="product1">
+                    </div>
+        
+                    <div class="inline-field">
+                        <label for="product2">Product 2</label>
+                        <input type="radio" name="product" id="product2" value="product2">
+                    </div>
+
+
+                    <div class="inline-field">
+                        <label for="product3">Product 3</label>
+                        <input type="radio" name="product" id="product3" value="product3">
+                    </div>
+        </fieldset>
+
+
+
+        <div class="form-group full-width">
+              <label for="count">How many are in your company?</label>
+
+              <select name="count" id="count">
+                <option value="0">None</option>
+                <option value="1">1</option>
+                <option value="2-3">2-3</option>
+                <option value="4+">4+</option>
+              </select>
+        </div>
+
+        <div class="form-group full-width">
+              <label for="source">How did you hear about us?</label>
+
+              <select name="source" id="source" multiple size="5">
+                <option value="Social Media">Social Media</option>
+                <option value="Friends/Family">Friends / Family</option>
+                <option value="Store">Store</option>
+                <option value="Internet">Internet</option>
+                <option value="Other">Other</option>
+              </select>
+        </div>
+
+         <div class="form-group full-width">
+            <label for="comments">Questions or Comments</label>
+            <textarea name="comment" id="comments" placeholder="Please write your questions or comments here"></textarea>
+         </div>
+
+         <input type="submit" value="submit the form">
+    </form>
+</body>
+</html>
