@@ -2,15 +2,18 @@
 
 * {
     box-sizing: border-box;
+}
 
-html { font-size: 10px; }
+html { font-size: 16px; }
 body {
     font: 1.5rem Verdana, Arial, sans-serif;
     color: #333;
 }
 h1 { font-size: 4rem; margin-bottom: .5em; }
 h2 { font-size: 3rem; margin: 1em 0 .25em; }
-h2 { font-size: 2.5rem; margin: 1em 0 .25em; }
+
+/*h2 { font-size: 2.5rem; margin: 1em 0 .25em; } */
+
 p { margin: 0 0 1em; }
 hr { margin: 2em 0 1em; }
 
@@ -20,8 +23,19 @@ hr { margin: 2em 0 1em; }
     padding: 10px;
 }
 header {
-    background-color: #efefef;
+    background-color: #084b83;
 
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #f9f9f9; /* Your lighter background */
+    padding: 15px 25px;       /* More padding on sides than top/bottom creates the oval */
+    border-radius: 50px;      /* Large value creates the rounded "pill" oval shape */
+    text-decoration: none;
+    border: 1px solid #ddd; 
+    
 }
 header .container {
     display: flex;
@@ -32,13 +46,13 @@ header .container {
 
 header a {
     text-decoration: none;
-    color: #000;
+    color: #f9f9f9;
 
 
 }
 
 header a:hover {
-    color: #a703a7;
+    color: #e87722;
 
 }
 
@@ -53,14 +67,19 @@ nav ul {
 
 nav li {
     position: relative;
+    
+
+}
+.sub-menu li {
+    position: relative; 
 }
 
 nav .btn {
-    background-color: #a703a7;
+    background-color: #e87722;
     color: #fff;
     padding: 5px 10px;
     border-radius: 10px;
-    border: 1px solid #a703a7
+    border: 1px solid #e87722;
 
 
 }
@@ -69,27 +88,67 @@ nav.btn:hover {
     background-color: transparent;
 
 }
+.sub-menu a, .sub2-menu a {
+    color: #084b83; /* This forces the sub-menu links to be blue */
+}
+
+/* Optional: change the hover color for sub-menu items specifically */
+.sub-menu a:hover, .sub2-menu a:hover {
+    color: #e87722; 
+}
 
 .sub-menu {
     /*display:flex; */
     flex-direction: column;
     position: absolute;
-    position: relative
+    /*position: relative;*/
     left: 0;
+   
     background-color: #fff;
-    border: 1px solid #efefef ;
+    border: 1px solid #e87722 ;
     padding: 10px 20px 20px 20px;
     border-radius: 20px;
-    width: 150px;
-    padding-top: 15px;
+    width: 180px;
+    padding-top: 10px;
     display: none;
 
 }
+.sub2-menu {
+    /*display:flex; */
+    flex-direction: column;
+    position: absolute;
+    left: 100%;
+    margin-bottom: 10%;
+    top:-10%;
+   
+    background-color: #fff;
+    border: 1px solid #e87722;
+    padding: 10px 20px 20px 20px;
+    border-radius: 20px;
+    width: 180px;
+    padding-top: 10px;
+    display: none;
 
+}
+.sub-menu li {
+    width: 100%; /* Makes the entire row hoverable */
+    display: block; 
+}
+
+.sub-menu li a {
+    display: block; /* Makes the clickable link fill the whole row */
+    padding: 10px;
+}
+
+/* te carrot > below means you only want the direct descendent/ direct child of the element to be affected by the hover style */
 nav li:hover > .sub-menu {
     display:flex;
 
 }
+.sub-menu li:hover > .sub2-menu {
+    display: flex;
+}
+
 
 .navToggler, .navTogglerMenu {
     display:none;
@@ -183,5 +242,4 @@ nav li:hover > .sub-menu {
     .navToggler:checked ~ nav, .navToggler:checked ~ .navTogglerMenu .menuClose {
         display: block;
     }
-}
 }
