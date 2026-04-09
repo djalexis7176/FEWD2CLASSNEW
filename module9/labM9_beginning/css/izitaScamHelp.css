@@ -1,0 +1,118 @@
+/* --- SCAM HELP PAGE LAYOUT --- */
+
+.hero-section { text-align: center; margin-bottom: 20px; }
+.hero-lines span { display: block; height: 2px; background: #ccc; margin: 8px auto; width: 60%; }
+
+.pills-container {
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+    margin: 40px 0;
+}
+
+.pill-btn {
+    background: var(--primary-blue);
+    color: #fff;
+    padding: 10px 45px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 800;
+    font-family: 'Public Sans', sans-serif;
+    min-width: 160px;
+    text-align: center;
+}
+
+/* CARDS: SIDE-BY-SIDE */
+.scam-help-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    margin-bottom: 60px;
+    align-items: stretch;
+}
+
+.help-card {
+    flex: 1;
+    background: var(--card-grey);
+    border-radius: 40px;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    min-height: 480px;
+    position: relative;
+}
+
+.help-card h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 0;
+    color: var(--primary-blue);
+    margin-bottom: 40px;
+}
+
+/* CUSTOM BULLETS WITH CONNECTING LINES */
+.custom-bullets { list-style: none; padding: 0; flex-grow: 1; }
+.custom-bullets li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+    font-weight: 700;
+    color: var(--primary-blue);
+    font-size: 1.2rem;
+}
+
+.custom-bullets li::after {
+    content: "";
+    flex-grow: 1;
+    height: 2px;
+    background: #aaa;
+    margin: 0 15px;
+}
+
+.bullet-dot {
+    width: 25px;
+    height: 25px;
+    background: var(--primary-blue);
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+/* Card Alignment Logic */
+.card-left .bullet-dot { order: 3; }
+.card-left li::after { order: 2; }
+
+.card-right li { flex-direction: row; }
+.card-right .bullet-dot { order: 1; }
+.card-right li::after { order: 2; }
+.card-right span { order: 3; }
+
+/* DECORATIVE ELEMENTS */
+.more-btn-circle {
+    background: var(--primary-blue);
+    color: #fff;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: 800;
+    margin: 20px auto 0;
+    font-size: 1.1rem;
+}
+
+.solid-blue-circle {
+    background: var(--primary-blue);
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+@media (max-width: 991px) {
+    .scam-help-cards { flex-direction: column; gap: 40px; }
+    .pills-container { gap: 40px; }
+}

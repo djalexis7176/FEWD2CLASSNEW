@@ -1,0 +1,243 @@
+/* --- BASE STYLES --- */
+* {
+    box-sizing: border-box;
+}
+
+html { 
+    font-size: 16px; 
+}
+
+body {
+    font: 1.1rem Verdana, Arial, sans-serif; /* Adjusted font size for better readability */
+    color: #333;
+    margin: 0;
+    line-height: 1.6;
+}
+
+h1 { font-size: 3.5rem; margin-bottom: .5em; color: #084b83; }
+h2 { font-size: 2.5rem; margin: 1em 0 .25em; }
+p { margin: 0 0 1em; }
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* --- HEADER & LOGO --- */
+header {
+    background-color: #084b83;
+    position: relative;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #f9f9f9;
+    padding: 10px 25px;       
+    border-radius: 50px;      
+    text-decoration: none;
+    border: 1px solid #ddd; 
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    text-decoration: none;
+    color: #f9f9f9;
+}
+
+header a:hover {
+    color: #e87722;
+}
+
+/* --- NAVIGATION --- */
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    position: relative;
+}
+
+nav .btn {
+    background-color: #e87722;
+    color: #fff !important;
+    padding: 8px 15px;
+    border-radius: 10px;
+    border: 1px solid #e87722;
+    transition: 0.3s;
+}
+
+nav .btn:hover {
+    background-color: transparent;
+    color: #e87722 !important;
+}
+
+/* --- SUBMENUS --- */
+.sub-menu, .sub2-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #e87722;
+    border-radius: 10px;
+    width: 200px;
+    padding: 10px 0;
+    list-style: none;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+    z-index: 100;
+}
+
+.sub-menu {
+    top: 100%;
+    left: 0;
+}
+
+.sub2-menu {
+    left: 100%;
+    top: 0;
+}
+
+.sub-menu a, .sub2-menu a {
+    color: #084b83 !important;
+    padding: 10px 20px;
+    display: block;
+    font-size: 0.95rem;
+}
+
+.sub-menu li:hover > a, .sub2-menu li:hover > a {
+    background-color: #f0f0f0;
+    color: #e87722 !important;
+}
+
+nav li:hover > .sub-menu, 
+.sub-menu li:hover > .sub2-menu {
+    display: flex;
+}
+
+/* --- CONTENT SECTION --- */
+.hero-section {
+    padding: 60px 0;
+    text-align: left;
+}
+
+.btn-large {
+    display: inline-block;
+    background-color: #084b83;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+footer {
+    background: #f4f4f4;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+/* --- MOBILE RESPONSIVE --- */
+.navToggler {
+    display: none;
+}
+
+.navTogglerMenu {
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    /* Applying the "Stacking/Fix" logic from the selected Canvas section */
+    .hero-section { 
+        text-align: center; 
+        padding: 40px 20px; 
+    }
+    
+    h1 { font-size: 2.5rem; }
+
+    header .container {
+        padding: 15px 20px;
+    }
+
+    .navTogglerMenu {
+        display: block;
+    }
+
+    .menuClose { display: none; }
+
+    /* Mobile Nav Positioning */
+    nav {
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        left: 0;
+        background-color: #084b83;
+        border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .navToggler:checked ~ nav {
+        display: block;
+    }
+
+    /* Icon Swapping */
+    .navToggler:checked ~ .navTogglerMenu .menuOpen { display: none; }
+    .navToggler:checked ~ .navTogglerMenu .menuClose { display: block; }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    nav li {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    nav li a {
+        padding: 20px;
+        display: block;
+    }
+
+    nav .btn {
+        border-radius: 0;
+        background-color: #e87722;
+    }
+
+    /* Submenu adjustments for Mobile */
+    .sub-menu, .sub2-menu {
+        position: static;
+        width: 100%;
+        display: block; /* Show automatically in mobile dropdown or keep hidden? 
+                           Usually better to stack them in mobile */
+        border: none;
+        background-color: #063a66;
+        box-shadow: none;
+    }
+
+    .sub-menu a, .sub2-menu a {
+        color: #fff !important;
+        padding-left: 40px;
+    }
+}

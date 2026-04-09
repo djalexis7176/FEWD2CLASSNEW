@@ -1,0 +1,127 @@
+/* --- PAGE-SPECIFIC GET INVOLVED STYLES --- */
+
+.summary-text {
+    font-size: 1.3rem; 
+    max-width: 800px;
+}
+
+.circle-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin: 40px 0 80px;
+    text-align: center;
+}
+
+.involvement-circle {
+    width: 120px;
+    height: 120px;
+    background: var(--primary-blue);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    transition: transform 0.3s ease, background 0.3s ease;
+    cursor: pointer;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.mood-icon {
+    width: 60px;
+    height: 60px;
+    /* Light off-white filter for icons over dark background */
+    filter: invert(99%) sepia(1%) saturate(543%) hue-rotate(307deg) brightness(115%) contrast(97%);
+}
+
+.involvement-item:hover .involvement-circle {
+    transform: scale(1.1);
+    background: var(--mood-teal);
+}
+
+.involvement-item h3 {
+    color: var(--primary-blue);
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+}
+
+.involvement-item p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+/* Section Header Icons */
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.header-icon {
+    width: 45px;
+    height: 45px;
+    /* Primary Blue filter for icons over light background */
+    filter: invert(21%) sepia(44%) saturate(2335%) hue-rotate(187deg) brightness(93%) contrast(94%);
+}
+
+/* Form Styles */
+.inquiry-section {
+    background: var(--mood-light);
+    padding: 60px 30px;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    margin-bottom: 60px;
+}
+
+.form-container {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.involvement-form {
+    text-align: left;
+    margin-top: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--primary-blue);
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.form-group input:focus, 
+.form-group select:focus, 
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--mood-teal);
+}
+
+@media (max-width: 767px) {
+    .circle-grid { gap: 30px; }
+    .involvement-circle { width: 100px; height: 100px; }
+    .mood-icon { width: 50px; height: 50px; }
+    .summary-text { font-size: 1.1rem; }
+    .inquiry-section { padding: 40px 20px; }
+}
+

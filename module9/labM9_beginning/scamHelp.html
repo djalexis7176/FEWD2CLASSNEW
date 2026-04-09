@@ -2,120 +2,107 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Scam Help</title>
+    <title>Scam Help - Izita Scam Help</title>
     
-    <link rel="stylesheet" href="css/reset.css">
-
-    <link rel="stylesheet" href="css/styles.css">
-
-<link rel="icon" href="izitaImages/favicon.ico" sizes="any">
-
-<link rel="icon" href="/izitaImages/favicon.svg" type="image/svg+xml">
-
-
-
-    <link rel="shortcut icon" href=izitaImages/favicon.ico type="image/x-icon">
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="css/izitaStyles3.css">
+    <link rel="stylesheet" href="css/izitaScamHelp.css">
     
-
+    <!-- High Legibility Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Public+Sans:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="izitaImages/favicon.ico" sizes="any">
 </head>
-<body>
 
-<header>
-
-    <div class="container">
-
-            <a href="izitaIndex.html"><img src="izitaImages/logo.png" alt="logo"> </a>
+<body class="high-legibility">
+    <header>
+        <div class="container">
+            <a href="izitaIndex2.html" class="logo">
+                <img src="izitaImages/logo.png" alt="Izita Logo" onerror="this.src='https://via.placeholder.com/150x50?text=Izita+Logo'"> 
+            </a>
 
             <input type="checkbox" class="navToggler" id="navToggler">
 
             <nav>
-
                 <ul>
-
-                    <li> <a href="izitaIndex.html">Home</a></li>
-
-                    <li> <a href="ScamHelp.html">Scam Help</a></li>
-
-                    <li> <a href="scams101.html">Scams 101</a>
-
-                            <ul class="sub-menu">
-
-                                <li><a href="/scamtypes/scamtypes.html">Scam Types</a></li>
-
-                                <ul class="sub-menu">
-                                    
-                                    <li><a href="/scamtypes/computerScams.html">Computer Scams</a></li>
-                                    <li><a href="/scamtypes/familyScams.html">Family Scams</a></li>
-                                    <li><a href="features.html">Phone Scams</a></li>
-                                    <li><a href="community.html">E-mail Scams</a></li>
-                                    <li><a href="index.html">Social Scams</a></li>
-                                    <li><a href="about.html">Financial Scams</a></li>
-                
-                                </ul>
-                                
-                                    
-                                <li><a href="features.html#quizzes">Top 10 Scams</a></li>
-
-                                <li><a href="features.html#community">Checklist</a></li>
-
-                                 <li><a href="features.html#community">Preventin</a></li>
-                                 
-                            </ul>
-
-                    </li>
-
-                    
-                    <li><a href="community.html">Resources</a></li>
-
-                    <li><a href="contact.html" class="btn">Get Involved</a></li>
-
-                    <li> <a href="about.html">About Us</a></li>
-                    
-                        
+                    <li><a href="izitaIndex2.html">Home</a></li>
+                    <li><a href="scamHelp.html">Scam Help</a></li>
+                    <li><a href="scams101.html">Scams 101</a></li>
+                    <li><a href="scamResources.html">Resources</a></li>
+                    <li><a href="scamGetInvolved.html" class="btn">Get Involved</a></li>
+                    <li><a href="scamAboutUs.html">About Us</a></li>
                 </ul>
             </nav>
 
-            <label for="navToggler" class="navTogglerMenu" name="navToggler">
-                <img src="images/menu.svg" class="menuOpen" alt="menu">
-                <img src="images/x.svg" class="menuClose" alt="close">
+            <label for="navToggler" class="navTogglerMenu">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
             </label>
         </div>
-</header>
+    </header>
 
+    <main class="container">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <h1>SCAM HELP</h1>
+            <div class="hero-lines">
+                <span></span><span></span><span></span><span></span>
+            </div>
+        </section>
+
+        <!-- Navigation Pills -->
+        <div class="pills-container">
+            <a href="#help" class="pill-btn">help</a>
+            <a href="#report" class="pill-btn">report</a>
+        </div>
+
+        <!-- Two Cards (Redesigned from Wireframe) -->
+        <section class="scam-help-cards">
+            <!-- Help Column -->
+            <div class="help-card card-left">
+                <h2>common questions</h2>
+                <ul class="custom-bullets">
+                    <li data-text="is it a scam?"><div class="bullet-dot"></div></li>
+                    <li data-text="unrecognized charges?"><div class="bullet-dot"></div></li>
+                    <li data-text="suspicious call?"><div class="bullet-dot"></div></li>
+                    <li data-text="strange email?"><div class="bullet-dot"></div></li>
+                </ul>
+                <a href="scams101.html" class="more-btn-circle">more</a>
+            </div>
+
+            <!-- Report Column -->
+            <div class="help-card card-right">
+                <h2>immediate steps</h2>
+                <ul class="custom-bullets">
+                    <li><div class="bullet-dot"></div><span>contact bank</span></li>
+                    <li><div class="bullet-dot"></div><span>change passwords</span></li>
+                    <li><div class="bullet-dot"></div><span>freeze credit</span></li>
+                    <li><div class="bullet-dot"></div><span>file ic3 report</span></li>
+                </ul>
+                <div class="solid-blue-circle"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Global Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-description">
+                <p>
+                    Izita Scam Help is a non-profit initiative dedicated to protecting and educating seniors and their families about modern fraud. We provide immediate response tools and educational resources to ensure your digital safety.
+                </p>
+                <div class="placeholder-lines">
+                    <span></span><span></span>
+                </div>
+            </div>
+            <div class="footer-actions">
+                <a href="#" class="btn-report-orange">REPORT A SCAM NOW</a>
+                <a href="contact.html" class="contact-us-link">CONTACT US</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Emergency Button -->
+    <a href="scamHelp.html#report" class="emergency-sticky">EMERGENCY HELP!</a>
 
 </body>
-
-<h1> Scam Help</h1>
-    <p>
-        This is the description of what it means to get scam help.  Just a few Short sentences. Keep it simple and easy to follow.  Click for ways to get help.  or click to connect to a person for immediate help and emergency steps to take right away. 
-    </p>
-
-    <section class="helpAndReport">
-
-        <ul>
-            
-                    <li><a href="https://www.fbi.gov/how-we-can-help-you/scams-and-safety/common-frauds-and-scams/elde
-                    r-fraud" class="btn">Help</a></li>
-
-                    <li><a href="https://www.fbi.gov/how-we-can-help-you/scams-and-safety/common-frauds-and-scams/elde
-                    r-fraud" class="btn">Report</a></li>
-                    
-                    
-
-        
-        </ul>
-        
-
-
-
-
-    </section>
-
-
-
-</body>
-
 </html>

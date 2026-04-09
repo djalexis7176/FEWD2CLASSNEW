@@ -2,120 +2,176 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Scams 101</title>
-    
-    <link rel="stylesheet" href="css/reset.css">
-
-    <link rel="stylesheet" href="css/styles.css">
-
-<link rel="icon" href="izitaImages/favicon.ico" sizes="any">
-
-<link rel="icon" href="/izitaImages/favicon.svg" type="image/svg+xml">
-
-
-
-    <link rel="shortcut icon" href=izitaImages/favicon.ico type="image/x-icon">
-    
-
+    <title>Scams 101 - Izita Scam Help</title>
+    <!-- Linked to Global and Page-Specific CSS -->
+    <link rel="stylesheet" href="css/izitaStyles3.css">
+    <link rel="stylesheet" href="css/izitaScams101.css">
+    <!-- Google Fonts for High Legibility (Atkinson Hyperlegible and Public Sans) -->
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Public+Sans:wght@700;800&display=swap" rel="stylesheet">
+    <!-- Favicon Links -->
+    <link rel="icon" href="izitaImages/favicon.ico" sizes="any">
+    <link rel="icon" href="izitaImages/favicon.svg" type="image/svg+xml">
 </head>
-<body>
 
-<header>
+<body class="high-legibility">
+    <header>
+        <div class="container">
+            <!-- Logo Home Link -->
+            <a href="izitaIndex2.html" class="logo">
+                <img src="izitaImages/logo.png" alt="Izita Logo" onerror="this.src='https://via.placeholder.com/150x50?text=Izita+Logo'"> 
+            </a>
 
-    <div class="container">
-
-            <a href="izitaIndex.html"><img src="izitaImages/logo.png" alt="logo"> </a>
-
+            <!-- Checkbox for the mobile menu toggle -->
             <input type="checkbox" class="navToggler" id="navToggler">
 
+            <!-- Primary Navigation with updated file names -->
             <nav>
-
                 <ul>
-
-                    <li> <a href="izitaIndex.html">Home</a></li>
-
-                    <li> <a href="about.html">Scam Help</a></li>
-
-                    <li> <a href="features.html">Scams 101</a>
-
-                            <ul class="sub-menu">
-
-                                <li><a href="/scamtypes/scamtypes.html">Scam Types</a></li>
-
-                                <ul class="sub-menu">
-                                    
-                                    <li><a href="/scamtypes/computerScams.html">Computer Scams</a></li>
-                                    <li><a href="/scamtypes/familyScams.html">Family Scams</a></li>
-                                    <li><a href="features.html">Phone Scams</a></li>
-                                    <li><a href="community.html">E-mail Scams</a></li>
-                                    <li><a href="index.html">Social Scams</a></li>
-                                    <li><a href="about.html">Financial Scams</a></li>
-                
-                                </ul>
-                                
-                                    
-                                <li><a href="features.html#quizzes">Top 10 Scams</a></li>
-
-                                <li><a href="features.html#community">Checklist</a></li>
-
-                                 <li><a href="features.html#community">Preventin</a></li>
-                                 
-                            </ul>
-
+                    <li><a href="izitaIndex2.html">Home</a></li>
+                    
+                    <!-- SCAM HELP -->
+                    <li>
+                        <a href="scamHelp.html">Scam Help</a>
+                        <ul class="sub-menu">
+                            <li><a href="scamHelp.html#help">Get Support</a></li>
+                            <li><a href="scamHelp.html#report">Report Incident</a></li>
+                        </ul>
                     </li>
 
-                    
-                    <li><a href="community.html">Resources</a></li>
+                    <!-- SCAMS 101 -->
+                    <li>
+                        <a href="scams101.html">Scams 101</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#scam-types">Scam Types &raquo;</a>
+                                <ul class="sub2-menu">
+                                    <li><a href="computer-scams.html">Computer Scams</a></li>
+                                    <li><a href="family-scams.html">Family Scams</a></li>
+                                    <li><a href="phone-scams.html">Phone Scams</a></li>
+                                    <li><a href="email-scams.html">E-mail Scams</a></li>
+                                    <li><a href="social-scams.html">Social Scams</a></li>
+                                    <li><a href="financial-scams.html">Financial Scams</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#checklist">Checklist</a></li>
+                            <li><a href="#top-10">Top 10 Scams</a></li>
+                            <li><a href="#prevention">Prevention</a></li>
+                        </ul>
+                    </li>
 
-                    <li><a href="contact.html" class="btn">Get Involved</a></li>
+                    <!-- RESOURCES -->
+                    <li>
+                        <a href="scamResources.html">Resources</a>
+                        <ul class="sub-menu">
+                            <li><a href="events.html">Events</a></li>
+                            <li><a href="stories.html">Stories</a></li>
+                            <li><a href="news.html">In the News</a></li>
+                        </ul>
+                    </li>
 
-                    <li> <a href="about.html">About Us</a></li>
-                    
-                        
+                    <!-- GET INVOLVED -->
+                    <li>
+                        <a href="scamGetInvolved.html" class="btn">Get Involved</a>
+                        <ul class="sub-menu">
+                            <li><a href="volunteer.html">Volunteer</a></li>
+                            <li><a href="donate.html">Donate</a></li>
+                            <li><a href="help.html">Help Out</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- ABOUT US -->
+                    <li>
+                        <a href="scamAboutUs.html">About Us</a>
+                        <ul class="sub-menu">
+                            <li><a href="team.html">Our Team</a></li>
+                            <li><a href="history.html">History</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
 
-            <label for="navToggler" class="navTogglerMenu" name="navToggler">
-                <img src="images/menu.svg" class="menuOpen" alt="menu">
-                <img src="images/x.svg" class="menuClose" alt="close">
+            <!-- Toggle Label using the SVG icons -->
+            <label for="navToggler" class="navTogglerMenu">
+                <svg class="menuOpen" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+                <svg class="menuClose" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
             </label>
         </div>
-</header>
+    </header>
 
+    <main class="container">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <h1>Scams 101</h1>
+            <p class="summary-text">
+                Knowledge is your best defense. We break down the tactics criminals use and provide the tools you need to stay safe. Explore the common types of fraud and learn how to spot red flags before they cost you.
+            </p>
+        </section>
 
+        <!-- Dashboard Grid (Checklist, Top 10, Prevention) -->
+        <section class="scams-dashboard">
+            <div class="dashboard-grid">
+                <!-- Checklist -->
+                <div id="checklist" class="dashboard-card">
+                    <div class="card-icon-circle">
+                        <img src="izitaIcons/Detective.svg" alt="Detective Icon" class="mood-icon">
+                    </div>
+                    <h3>Red Flag Checklist</h3>
+                    <p>A simple list of signs that the "urgent" message you just received is actually a scam.</p>
+                    <a href="checklist.html" class="link-btn">View Checklist</a>
+                </div>
+
+                <!-- Top 10 -->
+                <div id="top-10" class="dashboard-card">
+                    <div class="card-icon-circle">
+                        <img src="izitaIcons/GlobeHemisphereEast.svg" alt="Globe Icon" class="mood-icon">
+                    </div>
+                    <h3>Top 10 Scams</h3>
+                    <p>See the most common tactics used today, from tech support fraud to romance scams.</p>
+                    <a href="top-10.html" class="link-btn">See Trends</a>
+                </div>
+
+                <!-- Prevention -->
+                <div id="prevention" class="dashboard-card">
+                    <div class="card-icon-circle">
+                        <img src="izitaIcons/FirstAid.svg" alt="First Aid Icon" class="mood-icon">
+                    </div>
+                    <h3>Prevention Tips</h3>
+                    <p>Simple habits and security settings that make you a much harder target for criminals.</p>
+                    <a href="prevention.html" class="link-btn">Protect Yourself</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scam Types Section (Based on Wireframe trailing bullets) -->
+        <section id="scam-types" class="scam-types-section">
+            <div class="section-header">
+                <img src="izitaIcons/Globe.svg" alt="Globe Icon" class="header-icon">
+                <h2>Scam Types</h2>
+            </div>
+            <div class="list-container">
+                <p>Click on a category below to learn about specific tactics and see real-world examples.</p>
+                <div class="bullet-container">
+                    <ul class="trailing-list">
+                        <li><a href="computer-scams.html">Computer & Tech Support Scams</a></li>
+                        <li><a href="family-scams.html">Family & Grandparent Impersonation</a></li>
+                        <li><a href="phone-scams.html">Phone, SMS, and Robocall Fraud</a></li>
+                        <li><a href="email-scams.html">E-mail Phishing & Malicious Links</a></li>
+                        <li><a href="social-scams.html">Social Media Hijacking & Scams</a></li>
+                        <li><a href="financial-scams.html">Investment & Cryptocurrency Scams</a></li>
+                        <li><a href="utility-scams.html">Utility & Government Impersonation</a></li>
+                        <li><a href="romance-scams.html">Online Romance & Dating Fraud</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Izita Scam Help. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
-
-<h1> Scams 101</h1>
-    <p>
-        This is the description of what it means to get scam help.  Just a few Short sentences. Keep it simple and easy to follow.  Click for ways to get help.  or click to connect to a person for immediate help and emergency steps to take right away. 
-    </p>
-
-    <section class="helpAndReport">
-
-        <ul>
-            
-                    <li><a href="https://www.fbi.gov/how-we-can-help-you/scams-and-safety/common-frauds-and-scams/elde
-                    r-fraud" class="btn">Help</a></li>
-                    
-                    <li><a href="https://www.fbi.gov/how-we-can-help-you/scams-and-safety/common-frauds-and-scams/elde
-                    r-fraud" class="btn">Report</a></li>
-                    
-                    
-
-        
-        </ul>
-        
-
-
-
-
-    </section>
-
-
-
-</body>
-
 </html>
+

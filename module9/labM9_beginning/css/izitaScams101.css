@@ -1,0 +1,172 @@
+/* --- PAGE-SPECIFIC SCAMS 101 STYLES --- */
+
+.summary-text {
+    font-size: 1.3rem;
+    max-width: 800px;
+    margin-bottom: 2rem;
+}
+
+/* Dashboard Grid (3 Boxes) */
+.scams-dashboard {
+    margin: 40px 0 80px;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.dashboard-card {
+    background: var(--mood-light);
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    padding: 40px 25px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.card-icon-circle {
+    width: 110px;
+    height: 110px;
+    background: var(--primary-blue);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.mood-icon {
+    width: 55px;
+    height: 55px;
+    /* Light off-white filter for icons over dark blue background */
+    filter: invert(99%) sepia(1%) saturate(543%) hue-rotate(307deg) brightness(115%) contrast(97%);
+}
+
+.dashboard-card h3 {
+    color: var(--primary-blue);
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+}
+
+.dashboard-card p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    color: #444;
+}
+
+.link-btn {
+    color: var(--mood-orange);
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.1rem;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+}
+
+.link-btn:hover {
+    border-bottom-color: var(--mood-orange);
+}
+
+/* Scam Types Section (Trailing Bullets) */
+.scam-types-section {
+    background: #fff;
+    padding: 60px 0;
+    margin-bottom: 60px;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.header-icon {
+    width: 45px;
+    height: 45px;
+    /* Primary Blue filter for icons over light background */
+    filter: invert(21%) sepia(44%) saturate(2335%) hue-rotate(187deg) brightness(93%) contrast(94%);
+}
+
+.list-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.list-container > p {
+    margin-bottom: 40px;
+    font-size: 1.15rem;
+}
+
+.bullet-container {
+    position: relative;
+    overflow: hidden;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.trailing-list {
+    list-style: none;
+    padding: 0;
+}
+
+.trailing-list li {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 40px;
+}
+
+.trailing-list li::before {
+    content: "•";
+    color: var(--mood-orange);
+    font-size: 2.5rem;
+    position: absolute;
+    left: 0;
+    top: 6px;
+}
+
+.trailing-list li a {
+    color: var(--primary-blue);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.25rem;
+    transition: color 0.2s;
+}
+
+.trailing-list li a:hover {
+    color: var(--mood-teal);
+}
+
+/* Trail off gradient effect */
+.bullet-container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(transparent, #fff);
+    pointer-events: none;
+}
+
+@media (max-width: 767px) {
+    .dashboard-grid { gap: 20px; }
+    .card-icon-circle { width: 90px; height: 90px; }
+    .mood-icon { width: 45px; height: 45px; }
+    .hero-section h1 { font-size: 2.8rem; }
+    .trailing-list li a { font-size: 1.1rem; }
+}
+
